@@ -9,11 +9,11 @@ public class Main {
         Bank bank = new Bank();
         FileStorageManager fileStorageManager = new FileStorageManager();
         Scanner sc = new Scanner(System.in);
-        // taking all the data that is there in the files
+
         fileStorageManager.loadBankData(bank);
         boolean isRunning = true;
         while (isRunning) {
-            System.out.println("\n===  ENTERPRISE BANKING SYSTEM ===");
+            System.out.println("\n=== ENTERPRISE BANKING SYSTEM ===");
             System.out.println("1. Register New Customer");
             System.out.println("2. Open New Account");
             System.out.println("3. Deposit Money");
@@ -35,7 +35,7 @@ public class Main {
                     case 2:
                         System.out.println("Enter Existing customer ID: ");
                         String custId = sc.nextLine();
-                        System.out.println("Type 'S'for Savings or 'C' for Current");
+                        System.out.println("Type 'S' for Savings or 'C' for Current");
                         String type = sc.nextLine().toUpperCase();
                         System.out.println("Enter initial deposit amount: $");
                         double initalDeposit = sc.nextDouble();
@@ -52,7 +52,7 @@ public class Main {
                             System.out.println("Enter overDraftLimit: $");
                             double overDraft = Double.parseDouble(sc.nextLine());
                             String accNum = bank.openCurrentAccount(custId, initalDeposit, overDraft,pin);
-                            System.out.println("Current Account Opend! Account ID: " + accNum);
+                            System.out.println("Current Account Opened! Account ID: " + accNum);
                         } else {
                             System.out.println("Invalid input");
                         }
