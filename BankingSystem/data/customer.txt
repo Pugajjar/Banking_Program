@@ -1,0 +1,2 @@
+CUST1,Samarth
+CUST2,ALICE
