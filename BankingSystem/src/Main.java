@@ -13,7 +13,7 @@ public class Main {
         fileStorageManager.loadBankData(bank);
         boolean isRunning = true;
         while (isRunning) {
-            System.out.println("\n=== 🏦 ENTERPRISE BANKING SYSTEM ===");
+            System.out.println("\n===  ENTERPRISE BANKING SYSTEM ===");
             System.out.println("1. Register New Customer");
             System.out.println("2. Open New Account");
             System.out.println("3. Deposit Money");
